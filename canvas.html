@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script  type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/coloring.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/page.css"></link>
+
+	<title>Детская раскраска</title>
 </head>
 <body>
-
+<div class="wrapper">
+	<h1>Детская раскраска</h1>
+	<canvas id="coloring" width="600" height="600">
+		Ваш браузер не поддерживает современную технологию canvas. Рекомендуем вам обновить его до современной версии.
+	</canvas>
+</div>
+<script>
+	$('#coloring').coloring();
+</script>
 </body>
 </html>
